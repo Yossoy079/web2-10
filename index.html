@@ -5,6 +5,18 @@
   <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>課題18/12/03</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+        $("#iambutton").click(function(){
+          $("#kieru").fadeOut(2000);
+        });
+       $("#waaai").click(function(){
+          $("#typeA").toggle("slow");
+          $("#typeB").toggle("slow");
+        });
+    });
+  </script>
  </head>
  <body>
    <div class ="container">
@@ -16,7 +28,7 @@
    
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">本日の課題です</a>
+        <a class="navbar-brand" href="#">本日の課題です(ここはテーマから引っ張ってきてますyo~~~)</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,6 +42,10 @@
     </nav>
    
    <div class ="container">
+    </br></br></br></br></br>
+    <div id="typeA">こんちわ～</br></div>
+    <div id="typeB" style="display: none">おやすみ～</br></div>
+    <div id="kieru">わーい押すと俺消えるなり</br></div>
     <h1>でかい！ <span class="badge badge-secondary">Wow!</span></h1>
     <h2>でかいか？ <span class="badge badge-secondary">Wow?</span></h2>
     <h3>でかくね？ <span class="badge badge-secondary">What?</span></h3>
